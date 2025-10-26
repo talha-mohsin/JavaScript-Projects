@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #e0eefc;
+}
+h1 {
+  text-align: center;
+  margin-top: 80px;
+}
+.container {
+  background-color: #fff;
+  height: 320px;
+  width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards {
+  height: 235px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+.card {
+  height: 235px;
+  width: 500px;
+  padding: 25px 25px 0px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.hidden {
+  display: none;
+}
+.bottom {
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imgBg {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(0, 115, 255);
+  border-radius: 50%;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+.img1 {
+  background-image: url(assets/pic1.jpg);
+}
+.img2 {
+  background-image: url(assets/pic2.jpg);
+}
+.img3 {
+  background-image: url(assets/pic3.jpg);
+}
+.img4 {
+  background-image: url(assets/pic4.jpg);
+}
+.img5 {
+  background-image: url(assets/pic5.jpg);
+}
+.img {
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+.name {
+  color: rgb(2, 47, 103);
+  font-weight: 900;
+}
+.designation {
+  font-size: 14px;
+  color: rgb(0, 100, 255);
+  font-weight: 600;
+}
+.review {
+  font-size: 13px;
+  margin: 10px 0;
+  color: rgb(2, 47, 103);
+}
+i {
+  color: rgb(0, 115, 255);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+i:hover {
+  cursor: pointer;
+  color: rgb(2, 47, 103);
+}
+button {
+  background-color: #e0eefc;
+  color: rgb(0, 115, 255);
+  border: 1.3px solid rgb(0, 115, 255);
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 12px;
+}

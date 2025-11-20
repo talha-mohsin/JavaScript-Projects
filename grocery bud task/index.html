@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Bud | Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="mainHeading">Grocery Bud</h1>
+      <p class="inputTxt">Please enter your grocery item!</p>
+      <div class="inputBar">
+        <input type="text" />
+        <button onclick="addItemHandler()" class="addBtn">Add</button>
+        <button style="display: none;" class="editBtn">Edit</button>
+        <!--  onclick="editItem()" -->
+      </div>
+      <div class="itemsList">
+        
+      </div>
+      <div class="foot">
+        <button onclick="clearItems()">Clear Items</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/df5205f864.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

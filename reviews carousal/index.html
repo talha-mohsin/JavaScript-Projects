@@ -10,7 +10,7 @@
     <h1>Our Reviews</h1>
     <div class="container">
       <div class="cards">
-        <div class="card hidden">
+        <div class="card">
           <div class="imgBg"></div>
           <div class="img img1"></div>
           <h3 class="name">Sarah Johnson</h3>
@@ -55,10 +55,10 @@
             time. It’s clear that customer satisfaction is their top priority.”
           </p>
         </div>
-        <div class="card">
+        <div class="card hidden">
           <div class="imgBg"></div>
           <div class="img img5"></div>
-          <h3 class="name">Ayesha Malik</h3>
+          <h3 class="name">Huzaifa Malik</h3>
           <p class="designation">Content Creator</p>
           <p class="review">
             “The design and experience of this platform are just amazing. I
@@ -69,8 +69,8 @@
       </div>
       <div class="bottom">
         <span>
-          <i class="fa-solid fa-angle-left"></i>
-          <i onclick="cardDisplay()" class="fa-solid fa-angle-right"></i>
+          <i onclick="prevCard()" class="fa-solid fa-angle-left"></i>
+          <i onclick="nextCard()" class="fa-solid fa-angle-right"></i>
         </span>
         <button>Surprise Me</button>
       </div>

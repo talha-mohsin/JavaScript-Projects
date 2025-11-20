@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Modal Task</h1>
+      <div class="product">
+        <img src="assets/watch.png" alt="" />
+        <button onclick="modal('open')">Preview</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="darkDisplay"></div>
+
+      <div class="modal">
+        <span class="crossIcon"><i onclick="modal()" class="fa-solid fa-xmark"></i></span>
+        <div class="product modalProduct">
+          <img src="assets/watch.png" alt="" />
+        </div>
+        <div class="description">
+          <div class="title">
+            <h2>Rolex</h2>
+            <span>Rs: 100,000/=</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, explicabo enim ratione quaerat, eveniet mollitia, beatae fuga at amet ullam veniam incidunt provident eum delectus quisquam quis necessitatibus tempore. Hic.</p>
+        </div>
+      </div>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/df5205f864.js" crossorigin="anonymous"></script>
+  </body>
+</html>

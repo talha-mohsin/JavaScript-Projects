@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Project</title>
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loader section (visible while the page is loading) -->
+    <div class="snipper">
+      <div class="rings">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span class="loading">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+      <!-- Navigation bar -->
+      <div id="nav">
+        <h1 id="logo">LocalStorage</h1>
+        <!-- Dark and light mode toggle icons -->
+        <i id="darkMode" class="fa-regular fa-sun"></i>
+        <i id="lightMode" style="display: none" class="fa-regular fa-moon"></i>
+      </div>
+
+      <!-- Output message area -->
+      <p id="result">Enter Your Info</p>
+
+      <!-- Input fields section -->
+      <div class="inputs">
+        <div>
+          <!-- User personal details -->
+          <input
+            id="firstName"
+            type="text"
+            name="firstName"
+            placeholder="firstName"
+          />
+          <input
+            id="lastName"
+            type="text"
+            name="lastName"
+            placeholder="lastName"
+          />
+        </div>
+
+        <!-- User account details -->
+        <input
+          id="userName"
+          type="text"
+          name="username"
+          placeholder="username"
+        />
+        <input id="email" type="text" name="email" placeholder="email" />
+        <input
+          id="password"
+          type="text"
+          name="password"
+          placeholder="password"
+        />
+
+        <!-- Submit button -->
+        <button id="submitBtn" type="submit">Submit</button>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>Made by Talha Mohsin | All rights reserved &copy;</footer>
+
+    <!-- Linking main JavaScript file -->
+    <script src="app.js"></script>
+
+    <!-- Font Awesome icon library -->
+    <script
+      src="https://kit.fontawesome.com/df5205f864.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

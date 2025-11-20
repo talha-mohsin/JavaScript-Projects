@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(235, 247, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  height: 400px;
+  width: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+#mainHeading {
+  color: rgb(28, 40, 83);
+  margin-bottom: 25px;
+}
+.inputTxt {
+  width: 80%;
+  color: rgb(231, 4, 4);
+  font-size: 12px;
+  font-weight: bold;
+  display: none;
+}
+.inputBar {
+  width: 80%;
+  height: 30px;
+  background-color: #4b3c3c;
+  display: flex;
+  border-radius: 5px;
+}
+.inputBar:hover {
+  box-shadow: 0 1px 3px gray;
+}
+.inputBar:focus {
+  box-shadow: 0 1px 3px gray;
+}
+input {
+  width: 85%;
+  border: none;
+  background-color: #dadbdc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 10px;
+}
+input:hover {
+  background-color: #cccdcd;
+  /* box-shadow: 0 1px 3px gray; */
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 1px 3px gray;
+  background-color: #cccdcd;
+}
+.addBtn,
+.editBtn {
+  width: 15%;
+  border: none;
+  background-color: #87b3de;
+  color: rgb(52, 52, 83);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
+}
+.addBtn:hover {
+  background-color: #6a8caf;
+  color: antiquewhite;
+}
+.editBtn {
+  background-color: #2c87e2;
+  color: white;
+}
+.itemsList {
+  height: 45%;
+  width: 80%;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+  margin: 20px 0;
+}
+.item:hover {
+  background-color: #fdebeb;
+  border-radius: 3px;
+}
+.itemName {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(52, 52, 83);
+}
+i {
+  font-size: 14px;
+  cursor: pointer;
+}
+#editIcon {
+  color: rgb(3, 211, 3);
+}
+#deleteIcon {
+  color: rgb(199, 6, 6);
+}
+#editIcon:hover {
+  color: rgb(2, 112, 2);
+}
+#deleteIcon:hover {
+  color: rgb(124, 3, 3);
+}
+.foot button {
+  background-color: transparent;
+  border: none;
+  color: rgb(199, 6, 6);
+  font-weight: bold;
+  font-size: 16px;
+}
+.foot button:hover {
+  color: rgb(249, 29, 29);
+  text-decoration: underline;
+}
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}

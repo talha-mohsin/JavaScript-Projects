@@ -1,0 +1,196 @@
+/* ===============================
+   Global Reset and Box Model Setup
+   =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   Loading Spinner Section
+   =============================== */
+.snipper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 0, 33);
+  display: none; /* Initially hidden until needed */
+}
+
+.rings {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circular Rings for Animation */
+.ring {
+  height: 200px;
+  width: 200px;
+  border: 0px solid #011015;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* First rotating ring (magenta color) */
+.ring:nth-child(1) {
+  border-bottom-width: 8px;
+  border-color: rgb(255, 0, 255);
+  animation: rotate1 2s linear infinite;
+}
+
+/* Second rotating ring (cyan color) */
+.ring:nth-child(2) {
+  border-bottom-width: 8px;
+  border-color: rgb(0, 247, 255);
+  animation: rotate2 2s linear infinite;
+}
+
+/* Third rotating ring (green color) */
+.ring:nth-child(3) {
+  border-bottom-width: 8px;
+  border-color: rgb(0, 255, 15);
+  animation: rotate3 2s linear infinite;
+}
+
+/* Loading text styling */
+.loading {
+  color: white;
+}
+
+/* ===============================
+   Main Container Section
+   =============================== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+}
+
+/* ===============================
+   Navigation Bar Section
+   =============================== */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0 5px purple;
+}
+
+/* Logo Styling */
+#logo {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* ===============================
+   Input Fields and Button Section
+   =============================== */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+/* Input Field Styles */
+input {
+  height: 30px;
+  width: 100%;
+  padding-left: 8px;
+  border: 1.5px solid purple;
+  color: purple !important;
+  border-radius: 5px;
+}
+
+/* Placeholder Text Color */
+input::placeholder {
+  color: rgb(190, 123, 190);
+}
+
+/* Input Focus Outline */
+input:focus {
+  outline: 1px solid rgb(73, 1, 73);
+}
+
+/* Autofill Text Color Fix for Chrome */
+input:-webkit-autofill {
+  -webkit-text-fill-color: purple !important;
+}
+
+/* Input Width Adjustment for First and Last Name */
+#firstName {
+  width: 49%;
+}
+#lastName {
+  width: 49%;
+}
+
+/* Submit Button Styling */
+button {
+  border: 1.5px solid purple;
+  background-color: #fff;
+  color: purple;
+  border-radius: 5px;
+  height: 30px;
+}
+
+/* ===============================
+   Footer Section
+   =============================== */
+footer {
+  margin: 100px 0 30px 0;
+  text-align: center;
+}
+
+/* ===============================
+   Responsive Design for Small Screens
+   =============================== */
+@media screen and (max-width: 500px) {
+  #logo {
+    font-size: 25px;
+  }
+  .inputs {
+    width: 80%;
+  }
+}
+
+/* ===============================
+   Keyframe Animations for Rings
+   =============================== */
+
+/* First ring animation */
+@keyframes rotate1 {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+/* Second ring animation */
+@keyframes rotate2 {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+/* Third ring animation */
+@keyframes rotate3 {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}

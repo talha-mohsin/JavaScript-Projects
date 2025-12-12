@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f3f3f3;
+}
+.container {
+  display: flex;
+  gap: 30px;
+}
+.sideBarContainer {
+  background-color: #f3f3f3;
+  height: 100%;
+  width: 220px;
+  padding: 20px 10px;
+  box-shadow: 0 0 5px goldenrod;
+}
+.sideBar {
+  background-color: #f3f3f3;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 10px;
+}
+.searchSuggestion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.suggest {
+  display: inline-block;
+  color: gray;
+  padding: 4px 4px 4px 10px;
+  font-size: 12px;
+  display: none;
+}
+.suggest:hover {
+  cursor: pointer;
+  background-color: #faf2f2;
+}
+.searchBar {
+  background-color: white;
+  /* border-radius: 20px; */
+  height: 30px;
+  padding: 5px 10px;
+  box-shadow: 0 1px 3px goldenrod;
+}
+.searchBar:hover {
+  box-shadow: 0 2px 3px rgb(148, 113, 23);
+}
+.searchBar i {
+  font-size: 12px;
+  color: goldenrod;
+}
+.searchBar i:hover {
+  cursor: pointer;
+  color: rgb(148, 113, 23);
+}
+.search {
+  height: 80%;
+  width: 90%;
+  border: none;
+  background-color: transparent;
+  padding-left: 7px;
+}
+input:focus {
+  outline: none;
+}
+.priceRange {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 10px;
+}
+.range {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: gray;
+  width: 150px;
+  margin: 10px 0;
+}
+.range .checkbox {
+  cursor: pointer;
+}
+/* sideBar --end-- */
+
+.page {
+  width: 75vw;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 50px;
+}
+.btns button {
+  border: 1.5px solid rgb(182, 139, 29);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(182, 139, 29);
+  background-color: transparent;
+}
+button:hover {
+  cursor: pointer;
+}
+.itemsMenu {
+  width: 75vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.item {
+  display: flex;
+  gap: 20px;
+}
+.itemImg {
+  width: 140px;
+  height: 100px;
+  border: 2px solid rgb(182, 139, 29);
+  border-radius: 7px;
+}
+.itemImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.itemDetails {
+  width: 70%;
+}
+.name_Prize {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(193, 193, 193);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.prize {
+  color: rgb(182, 139, 29);
+  font-size: 14px;
+}
+.aboutItem {
+  font-size: 13px;
+}
+footer {
+  text-align: center;
+  padding: 50px;
+  color: rgb(182, 139, 29);
+}

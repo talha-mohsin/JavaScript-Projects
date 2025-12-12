@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <section>
+        <div class="sideBarContainer">
+          <div class="sideBar">
+            <div class="searchSuggestion">
+              <div class="searchBar">
+                <i id="searchIco" class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  class="search"
+                  type="text"
+                  placeholder="Search your desired food"
+                />
+              </div>
+              <span class="suggest"
+                ><i class="fa-solid fa-clock-rotate-left"></i> Chicken
+                Biryani</span
+              >
+              <span class="suggest"
+                ><i class="fa-solid fa-clock-rotate-left"></i> Qeema
+                Paratha</span
+              >
+              <span class="suggest"
+                ><i class="fa-solid fa-clock-rotate-left"></i> Chicken
+                Karahi</span
+              >
+              <span class="suggest"
+                ><i class="fa-solid fa-clock-rotate-left"></i> Vanilla
+                Shake</span
+              >
+            </div>
+            <div class="priceRange">
+              <span class="range"
+                ><input class="checkbox" type="checkbox" value="100 - 200" />
+                <b>PKR 100 - 200</b></span
+              >
+              <span class="range"
+                ><input class="checkbox" type="checkbox" value="200 - 300" />
+                <b>PKR 200 - 300</b></span
+              >
+              <span class="range"
+                ><input class="checkbox" type="checkbox" value="300 - 400" />
+                <b>PKR 300 - 400</b></span
+              >
+              <span class="range"
+                ><input class="checkbox" type="checkbox" value="400 - 500" />
+                <b>PKR 400 - 500</b></span
+              >
+              <span class="range"
+                ><input class="checkbox" type="checkbox" value="500 - 600" />
+                <b>PKR 500 - 600</b></span
+              >
+              <span class="range"
+                ><input class="checkbox" type="checkbox" value="600 - 700" />
+                <b>PKR 600 - 700</b></span
+              >
+              <span class="range"
+                ><input class="checkbox" type="checkbox" value="700 - 800" />
+                <b>PKR 700 - 800</b></span
+              >
+              <span class="range"
+                ><input class="checkbox" type="checkbox" value="800 - 900" />
+                <b>PKR 800 - 900</b></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="page">
+        <header>
+          <h1>Our Food Menu</h1>
+          <div class="btns">
+            <button id="all">All</button>
+            <button id="breakfast">Breakfast</button>
+            <button id="lunch">Lunch</button>
+            <button id="dinner">Dinner</button>
+            <button id="shakes">Shakes</button>
+          </div>
+        </header>
+        <section>
+          <div class="itemsMenu"></div>
+        </section>
+        <footer>&copy; All rights reserved | Talha Mohsin</footer>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/df5205f864.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

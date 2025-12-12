@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video play - pause | Task</title>
-</head>
-<body>
-    <video src="video.mp4" controls></video>
-    <script src="app.js"></script>
-</body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+      }
+      video {
+        border-radius: 10px;
+        box-shadow: 0 5px 20px black;
+        width: 75vw;
+      }
+      i {
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <video src="video.mp4"></video>
+      <i
+        onclick="videoPlayHandler()"
+        id="play"
+        class="fa-solid fa-circle-play"
+      ></i>
+      <i
+        onclick="videoPauseHandler()"
+        id="pause"
+        class="fa-solid fa-circle-pause"
+        style="display: none"
+      ></i>
+    </div>
+    <script>
+      let myVideo = document.querySelector("video");
+      let play = document.querySelector("#play");
+      let pause = document.querySelector("#pause");
+
+      function videoPlayHandler() {
+        play.style.display = "none";
+        pause.style.display = "block";
+        myVideo.play();
+      }
+
+      function videoPauseHandler() {
+        pause.style.display = "none";
+        play.style.display = "block";
+        myVideo.pause();
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/df5205f864.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -29,8 +29,8 @@ h1 {
   align-items: center;
 }
 .card {
-  height: 235px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
   padding: 25px 25px 0px 25px;
   display: flex;
   flex-direction: column;
@@ -39,9 +39,6 @@ h1 {
   flex-shrink: 0;
 }
 
-.hidden {
-  display: none;
-}
 .bottom {
   height: 95px;
   display: flex;
@@ -111,4 +108,23 @@ button {
   border-radius: 5px;
   padding: 3px;
   font-size: 12px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    height: 300px;
+    width: 400px;
+  }
+  .cards {
+    height: 235px;
+    width: 400px;
+  }
+  .imgBg {
+    height: 80px;
+    width: 80px;
+  }
+  .img {
+    height: 80px;
+    width: 80px;
+  }
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll and Dice Game</title>
+    <link
+      rel="shortcut icon"
+      href="https://freepngimg.com/save/12025-dice-png/398x400"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card active" id="player1">
+        <h3 class="player1UI">Player 1</h3>
+        <h1 class="player1TotalScoreUI">0</h1>
+        <p class="currentBox">
+          Current<span class="player1CurrentScoreUI">0</span>
+        </p>
+      </div>
+      <div class="card" id="player2">
+        <h3 class="player2UI">Player 2</h3>
+        <h1 class="player2TotalScoreUI">0</h1>
+        <p class="currentBox">
+          Current<span class="player2CurrentScoreUI">0</span>
+        </p>
+      </div>
+      <div class="centerPart">
+        <div class="btn" onclick="newGameHandler()">New Game</div>
+        <div class="dice">
+          <img src="" alt="" />
+        </div>
+        <div class="btn" onclick="rollDiceHandler()">Roll Dice</div>
+        <div class="btn" onclick="holdDiceHandler()">Hold Dice</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

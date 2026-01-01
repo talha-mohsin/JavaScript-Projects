@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #6d2f72, #b12831);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 55vw;
+  height: 60%;
+  border-radius: 10px;
+  background-color: #ac6e8d;
+  display: flex;
+  position: relative;
+}
+.card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+}
+.currentBox {
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #bf2f57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.active {
+    background-color: #d589af;
+}
+.centerPart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.dice {
+    width: 80px;
+}
+img {
+    width: 100%;
+    filter: invert(1);
+}

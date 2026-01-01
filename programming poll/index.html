@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poll App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container" id="card">
+      <h2>Programming Poll</h2>
+      <button id="openPoll">Answer Poll</button>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+      <div class="modal-box">
+        <h3>Select Language</h3>
+
+        <div class="option">
+          <input type="radio" name="lang" value="0" /> JavaScript
+        </div>
+        <div class="option">
+          <input type="radio" name="lang" value="1" /> Python
+        </div>
+        <div class="option">
+          <input type="radio" name="lang" value="2" /> Rust
+        </div>
+        <div class="option">
+          <input type="radio" name="lang" value="3" /> C++
+        </div>
+
+        <button id="submitVote" style="margin-top: 15px; width: 100%">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
